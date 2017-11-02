@@ -32,7 +32,9 @@ The training accuracy:
 ![train accuracy](assets/trainacc.jpg)
 
 The testing accuracy:
-![test accuracy](assets/testac.jpg)
+![test accuracy](assets/testacc.jpg)
+
+The testing accuracy may be weird because a global step is used, which leads to a larger logging interval for testing, comparing with training.
 
 During the training process, it will save checkpoint every 10 epochs. The default folder to save the checkpoints is `$PROJECT_DIR/pretrained`
 
