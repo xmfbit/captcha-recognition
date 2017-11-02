@@ -1,0 +1,165 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AverageMeter	../main.py	/^class AverageMeter(object):$/;"	kind:class	line:108
+BLANK_LABEL	../generage_captcha.py	/^BLANK_LABEL = 10$/;"	kind:variable	line:7
+BLANK_LABEL	../utils.py	/^BLANK_LABEL = 0$/;"	kind:variable	line:6
+CTCLoss	../main.py	/^from warpctc_pytorch import CTCLoss$/;"	kind:namespace	line:19
+CaptchaDataset	../dataset.py	/^class CaptchaDataset(data.Dataset):$/;"	kind:class	line:11
+CaptchaDataset	../main.py	/^from dataset import CaptchaDataset$/;"	kind:namespace	line:22
+DATASET_PATH	../dataset.py	/^    from utils import DATASET_PATH$/;"	kind:namespace	line:53
+DATASET_PATH	../generage_captcha.py	/^from utils import DATASET_PATH$/;"	kind:namespace	line:5
+DATASET_PATH	../main.py	/^from utils import to_gpu, tensor_to_variable, get_prediction, DATASET_PATH$/;"	kind:namespace	line:23
+DATASET_PATH	../utils.py	/^DATASET_PATH = get_dataset_path()$/;"	kind:variable	line:15
+DATASET_SIZE	../generage_captcha.py	/^        DATASET_SIZE = 10$/;"	kind:variable	line:43
+DATASET_SIZE	../generage_captcha.py	/^        DATASET_SIZE = 50$/;"	kind:variable	line:45
+DataLoader	../main.py	/^from torch.utils.data import DataLoader$/;"	kind:namespace	line:5
+F	../model.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+F	../test.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:10
+F	../utils.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+ImageCaptcha	../generage_captcha.py	/^from captcha.image import ImageCaptcha$/;"	kind:namespace	line:1
+LABEL_SEQ_LENGTH	../generage_captcha.py	/^LABEL_SEQ_LENGTH = 5$/;"	kind:variable	line:6
+PackedSequence	../model.py	/^from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, PackedSequence$/;"	kind:namespace	line:5
+Process	../generage_captcha.py	/^from multiprocessing import Process$/;"	kind:namespace	line:4
+StackedRNN	../main.py	/^from model import StackedRNN$/;"	kind:namespace	line:21
+StackedRNN	../model.py	/^class StackedRNN(nn.Module):$/;"	kind:class	line:7
+StackedRNN	../test.py	/^from model import StackedRNN$/;"	kind:namespace	line:12
+Variable	../main.py	/^from torch.autograd import Variable$/;"	kind:namespace	line:8
+Variable	../model.py	/^from torch.autograd import Variable$/;"	kind:namespace	line:3
+Variable	../test.py	/^from torch.autograd import Variable$/;"	kind:namespace	line:9
+Variable	../utils.py	/^from torch.autograd import Variable$/;"	kind:namespace	line:3
+__getitem__	../dataset.py	/^    def __getitem__(self, ind):$/;"	kind:member	line:49
+__init__	../dataset.py	/^    def __init__(self, root_dir, mean, std):$/;"	kind:member	line:14
+__init__	../main.py	/^    def __init__(self):$/;"	kind:member	line:111
+__init__	../model.py	/^    def __init__(self, input_size, output_size, hidden_size, number_layers):$/;"	kind:member	line:10
+__len__	../dataset.py	/^    def __len__(self):$/;"	kind:member	line:46
+_is_tuple	../utils.py	/^def _is_tuple(tuple_like):$/;"	kind:function	line:20
+batch_size	../generage_captcha.py	/^    batch_size = get_batchsize(DATASET_SIZE, threads_num)$/;"	kind:variable	line:47
+collate_fn	../main.py	/^def collate_fn(batch):$/;"	kind:function	line:55
+criterion	../main.py	/^criterion = CTCLoss()$/;"	kind:variable	line:141
+cv2	../dataset.py	/^import cv2$/;"	kind:namespace	line:6
+cv2	../test.py	/^import cv2$/;"	kind:namespace	line:5
+data	../dataset.py	/^    data = torch.stack(dataset.data, dim=1).view((3, -1))$/;"	kind:variable	line:58
+data	../dataset.py	/^import torch.utils.data as data$/;"	kind:namespace	line:5
+dataset	../dataset.py	/^    dataset = CaptchaDataset(os.path.join(DATASET_PATH, 'train'), $/;"	kind:variable	line:54
+dataset.py	../dataset.py	1;"	kind:file	line:1
+decode	../test.py	/^def decode(raw_label_seq):$/;"	kind:function	line:103
+default_collate	../main.py	/^from torch.utils.data.dataloader import default_collate$/;"	kind:namespace	line:6
+demo	../test.py	/^def demo(img_path, model_path):$/;"	kind:function	line:51
+end	../generage_captcha.py	/^            end = DATASET_SIZE$/;"	kind:variable	line:52
+forward	../model.py	/^    def forward(self, input, hidden):$/;"	kind:member	line:23
+generage_captcha.py	../generage_captcha.py	1;"	kind:file	line:1
+generate_image	../generage_captcha.py	/^def generate_image(seed, path, start, end):$/;"	kind:function	line:25
+generate_random_label	../generage_captcha.py	/^def generate_random_label(length):$/;"	kind:function	line:12
+get_accuracy	../main.py	/^def get_accuracy(output, targets, prob=True):$/;"	kind:function	line:130
+get_batchsize	../generage_captcha.py	/^def get_batchsize(total_num, groups):$/;"	kind:function	line:32
+get_dataset_path	../utils.py	/^def get_dataset_path():$/;"	kind:function	line:8
+get_model	../main.py	/^def get_model():$/;"	kind:function	line:37
+get_model	../test.py	/^def get_model():$/;"	kind:function	line:19
+get_prediction	../main.py	/^from utils import to_gpu, tensor_to_variable, get_prediction, DATASET_PATH$/;"	kind:namespace	line:23
+get_prediction	../utils.py	/^def get_prediction(output, prob=True, lengths=None):$/;"	kind:function	line:35
+get_seq_length	../main.py	/^def get_seq_length(x):$/;"	kind:function	line:99
+help	../test.py	/^def help():$/;"	kind:function	line:131
+hidden_size	../main.py	/^hidden_size = 512$/;"	kind:variable	line:26
+hidden_size	../test.py	/^hidden_size = 512$/;"	kind:variable	line:16
+image	../generage_captcha.py	/^image = ImageCaptcha()$/;"	kind:variable	line:23
+img_path	../generage_captcha.py	/^img_path = DATASET_PATH$/;"	kind:variable	line:10
+init_hidden	../model.py	/^    def init_hidden(self, bsz, volatile=False):$/;"	kind:member	line:17
+itertools	../dataset.py	/^    import itertools$/;"	kind:namespace	line:72
+load_model	../test.py	/^def load_model(model_path):$/;"	kind:function	line:22
+logger	../main.py	/^    logger = tensorboard.SummaryWriter('.\/log')$/;"	kind:variable	line:32
+main	../main.py	/^def main():$/;"	kind:function	line:235
+main.py	../main.py	1;"	kind:file	line:1
+matplotlib	../dataset.py	/^    import matplotlib.pyplot as plt$/;"	kind:namespace	line:69
+matplotlib	../test.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:6
+mean	../dataset.py	/^    mean = torch.mean(data, dim=1)$/;"	kind:variable	line:60
+mean	../dataset.py	/^mean = [ 0.9010, 0.9049, 0.9025]$/;"	kind:variable	line:8
+mean	../main.py	/^    from dataset import mean, std$/;"	kind:namespace	line:50
+mean	../main.py	/^    mean = [0. for _ in range(3)]$/;"	kind:variable	line:52
+mean	../test.py	/^    from dataset import mean, std$/;"	kind:namespace	line:32
+mean	../test.py	/^    mean = [0. for _ in range(3)]$/;"	kind:variable	line:34
+model	../main.py	/^model = get_model()$/;"	kind:variable	line:40
+model.py	../model.py	1;"	kind:file	line:1
+nn	../main.py	/^import torch.nn as nn$/;"	kind:namespace	line:4
+nn	../model.py	/^import torch.nn as nn$/;"	kind:namespace	line:2
+nn	../model.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+nn	../test.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:10
+nn	../utils.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+normalized	../main.py	/^normalized = True$/;"	kind:variable	line:48
+normalized	../test.py	/^normalized = True$/;"	kind:variable	line:30
+np	../dataset.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../generage_captcha.py	/^import numpy as np$/;"	kind:namespace	line:3
+np	../test.py	/^import numpy as np$/;"	kind:namespace	line:4
+num_workers	../main.py	/^num_workers = 4$/;"	kind:variable	line:70
+number_layer	../main.py	/^number_layer = 2$/;"	kind:variable	line:27
+number_layer	../test.py	/^number_layer = 2$/;"	kind:variable	line:17
+optim	../main.py	/^import torch.optim as optim$/;"	kind:namespace	line:9
+os	../dataset.py	/^import os$/;"	kind:namespace	line:1
+os	../generage_captcha.py	/^import os$/;"	kind:namespace	line:2
+os	../main.py	/^import os$/;"	kind:namespace	line:1
+os	../test.py	/^import os$/;"	kind:namespace	line:1
+os	../utils.py	/^import os$/;"	kind:namespace	line:1
+p	../generage_captcha.py	/^        p = Process(target = generate_image, args = (t, path, start, end))$/;"	kind:variable	line:53
+pack_padded_sequence	../model.py	/^from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, PackedSequence$/;"	kind:namespace	line:5
+pad_packed_sequence	../model.py	/^from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, PackedSequence$/;"	kind:namespace	line:5
+path	../generage_captcha.py	/^    path = os.path.join(img_path, phase)$/;"	kind:variable	line:39
+plt	../dataset.py	/^    import matplotlib.pyplot as plt$/;"	kind:namespace	line:69
+plt	../test.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:6
+preprocess_data	../main.py	/^def preprocess_data(x):$/;"	kind:function	line:79
+preprocess_target	../main.py	/^def preprocess_target(target):$/;"	kind:function	line:88
+random	../dataset.py	/^    import random$/;"	kind:namespace	line:65
+read_preprocess_image	../test.py	/^def read_preprocess_image(img_path):$/;"	kind:function	line:37
+reset	../main.py	/^    def reset(self):$/;"	kind:member	line:114
+root_dir	../main.py	/^root_dir = DATASET_PATH$/;"	kind:variable	line:46
+sample_inds	../dataset.py	/^    sample_inds = random.sample(range(0, len(dataset)), 4)$/;"	kind:variable	line:66
+samples	../dataset.py	/^    samples = [dataset[i] for i in sample_inds]$/;"	kind:variable	line:67
+show_prob	../test.py	/^def show_prob(probs, labels=None):$/;"	kind:function	line:76
+shuffle	../main.py	/^    shuffle=False, $/;"	kind:variable	line:76
+shuffle	../main.py	/^    shuffle=True, $/;"	kind:variable	line:72
+solver	../main.py	/^solver = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)$/;"	kind:variable	line:143
+std	../dataset.py	/^    std = torch.std(data, dim=1)$/;"	kind:variable	line:61
+std	../dataset.py	/^std = [ 0.1521, 0.1347, 0.1458]$/;"	kind:variable	line:9
+std	../main.py	/^    from dataset import mean, std$/;"	kind:namespace	line:50
+std	../main.py	/^    std = [1. for _ in range(3)]$/;"	kind:variable	line:53
+std	../test.py	/^    from dataset import mean, std$/;"	kind:namespace	line:32
+std	../test.py	/^    std = [1. for _ in range(3)]$/;"	kind:variable	line:35
+sys	../test.py	/^import sys$/;"	kind:namespace	line:2
+tensor_to_variable	../main.py	/^from utils import to_gpu, tensor_to_variable, get_prediction, DATASET_PATH$/;"	kind:namespace	line:23
+tensor_to_variable	../utils.py	/^def tensor_to_variable(tensor, volatile):$/;"	kind:function	line:23
+tensorboard	../main.py	/^    import tensorboard$/;"	kind:namespace	line:15
+test	../main.py	/^def test(epoch, max_epoch):$/;"	kind:function	line:199
+test.py	../test.py	1;"	kind:file	line:1
+testing_bsz	../main.py	/^testing_bsz = 64$/;"	kind:variable	line:68
+testing_dataset	../main.py	/^testing_dataset = CaptchaDataset(os.path.join(root_dir, 'test'),$/;"	kind:variable	line:62
+testing_loader	../main.py	/^testing_loader = DataLoader(testing_dataset, batch_size=testing_bsz, $/;"	kind:variable	line:75
+threads	../generage_captcha.py	/^    threads = []$/;"	kind:variable	line:46
+threads_num	../generage_captcha.py	/^threads_num = 32$/;"	kind:variable	line:9
+to_gpu	../main.py	/^from utils import to_gpu, tensor_to_variable, get_prediction, DATASET_PATH$/;"	kind:namespace	line:23
+to_gpu	../utils.py	/^def to_gpu(item):$/;"	kind:function	line:29
+torch	../dataset.py	/^import torch$/;"	kind:namespace	line:4
+torch	../dataset.py	/^import torch.utils.data as data$/;"	kind:namespace	line:5
+torch	../main.py	/^import torch$/;"	kind:namespace	line:3
+torch	../main.py	/^import torch.nn as nn$/;"	kind:namespace	line:4
+torch	../main.py	/^import torch.optim as optim$/;"	kind:namespace	line:9
+torch	../model.py	/^import torch$/;"	kind:namespace	line:1
+torch	../model.py	/^import torch.nn as nn$/;"	kind:namespace	line:2
+torch	../model.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+torch	../test.py	/^import torch$/;"	kind:namespace	line:8
+torch	../test.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:10
+torch	../utils.py	/^import torch$/;"	kind:namespace	line:2
+torch	../utils.py	/^import torch.nn.functional as F$/;"	kind:namespace	line:4
+train	../main.py	/^def train(epoch, max_epoch):$/;"	kind:function	line:145
+traing_bsz	../main.py	/^traing_bsz = 64$/;"	kind:variable	line:67
+training_dataset	../main.py	/^training_dataset = CaptchaDataset(os.path.join(root_dir, 'train'), $/;"	kind:variable	line:60
+training_loader	../main.py	/^training_loader = DataLoader(training_dataset, batch_size=traing_bsz, $/;"	kind:variable	line:71
+update	../main.py	/^    def update(self, val, n=1):$/;"	kind:member	line:122
+use_cuda	../main.py	/^use_cuda = torch.cuda.is_available()$/;"	kind:variable	line:34
+use_cuda	../test.py	/^use_cuda = torch.cuda.is_available()$/;"	kind:variable	line:13
+use_tensorboard	../main.py	/^    use_tensorboard = False$/;"	kind:variable	line:17
+use_tensorboard	../main.py	/^use_tensorboard = True$/;"	kind:variable	line:13
+utils	../dataset.py	/^import torch.utils.data as data$/;"	kind:namespace	line:5
+utils.py	../utils.py	1;"	kind:file	line:1
+vis	../test.py	/^def vis(img_path, result):$/;"	kind:function	line:90

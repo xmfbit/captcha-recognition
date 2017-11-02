@@ -40,9 +40,9 @@ for phase in ['test', 'train']:
     if not os.path.exists(path):
         os.mkdir(path)
     if phase == 'test':
-        DATASET_SIZE = 10
+        DATASET_SIZE = 10000
     else:
-        DATASET_SIZE = 50
+        DATASET_SIZE = 50000
     threads = []
     batch_size = get_batchsize(DATASET_SIZE, threads_num)
 

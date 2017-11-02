@@ -25,13 +25,10 @@ python main.py
 
 If [tensorboard](https://github.com/dmlc/tensorboard) has been installed, a logging event file will be generated in the folder `$PROJECT_DIR/log`, which can be used to visualize the training process using `tensorboard` command of TensorFlow.
 
-Here are the results I got. The training loss:
 ![train loss](assets/trainloss.jpg)
 
-The training accuracy:
 ![train accuracy](assets/trainacc.jpg)
 
-The testing accuracy:
 ![test accuracy](assets/testacc.jpg)
 
 The testing accuracy may be weird because a global step is used, which leads to a larger logging interval for testing, comparing with training.
