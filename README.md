@@ -7,6 +7,10 @@ This repo is a demo for how to use warpctc in PyTorch to recognize captcha in im
 
 There is a [warpctc binding for Caffe](https://github.com/xmfbit/warpctc-caffe). Here, we use [warpctc binding for PyTorch](https://github.com/SeanNaren/warp-ctc).
 
+### Install WarpCTC binding for PyTorch
+
+Please refer to this page: [deepspeech.pytorch](https://github.com/SeanNaren/deepspeech.pytorch) to install WarpCTC binding for PyTorch first.
+
 ### Generate Data
 
 The python package [captcha](https://pypi.python.org/pypi/captcha/0.1.1) is used to generate dataset for training and testing.
